@@ -1,0 +1,247 @@
+/* ----------------------------------------------------------------------- */
+/* ----------------------- Webflow Forms Validation ---------------------- */
+/* ----------------------------------------------------------------------- */
+
+
+label.error {
+    color: #0E1218;
+    background-color: #B8D0FF;
+    text-align: left;
+    padding: 2px 15px 4px 15px;
+    width: 100%;
+    font-weight: 700;
+    font-family: 'NeueHass Unica Bold', sans-serif;
+    font-size: 16px;
+    height: 45px;
+    position: relative;
+    bottom: 12px;
+    opacity: 0.85;
+}
+
+input.error,
+textarea.error {
+    border-color: transparent !important;
+}
+
+label.error+.gradient-border {
+    margin-top: -62px;
+    margin-bottom: 45px;
+}
+
+#wf-form-Build-With-Aether label,
+#wf-form-Work-With-Aether label {
+    transition: margin 0.3s, opacity 0.15s;
+}
+
+#wf-form-Build-With-Aether label.error:first-child,
+#wf-form-Work-With-Aether label.error:first-child {
+    margin-top: 45px !important;
+}
+
+#wf-form-Build-With-Aether input:focus+label,
+#wf-form-Work-With-Aether input:focus+label,
+#wf-form-Build-With-Aether input:focus:placeholder-shown+label,
+#wf-form-Work-With-Aether input:focus:placeholder-shown+label,
+#wf-form-Build-With-Aether input.valid+label,
+#wf-form-Work-With-Aether input.valid+label,
+#wf-form-Build-With-Aether input.error+label,
+#wf-form-Work-With-Aether input.error+label {
+    margin: -28px 0 28px 0;
+    font-size: 16px;
+    opacity: 0.7;
+    cursor: text;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#wf-form-Build-With-Aether input:placeholder-shown+label,
+#wf-form-Work-With-Aether input:placeholder-shown+label,
+#wf-form-Build-With-Aether input.error:placeholder-shown+label,
+#wf-form-Work-With-Aether input.error:placeholder-shown+label {
+    margin: 0 0 0 0;
+    font-size: 26px;
+    opacity: 1;
+}
+
+#wf-form-Build-With-Aether textarea:focus+label,
+#wf-form-Work-With-Aether textarea:focus+label,
+#wf-form-Build-With-Aether textarea:focus:placeholder-shown+label,
+#wf-form-Work-With-Aether textarea:focus:placeholder-shown+label,
+#wf-form-Build-With-Aether textarea.valid+label,
+#wf-form-Work-With-Aether textarea.valid+label {
+    margin: -28px 0 28px 0;
+    font-size: 16px;
+    opacity: 0.7;
+    cursor: text;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#wf-form-Build-With-Aether textarea:placeholder-shown+label,
+#wf-form-Work-With-Aether textarea:placeholder-shown+label {
+    margin: 0 0 0 0;
+    font-size: 26px;
+    opacity: 1;
+}
+
+#wf-form-Build-With-Aether textarea,
+#wf-form-Work-With-Aether textarea {
+    resize: none;
+}
+
+
+
+/* ----------------------------------------------------------------------- */
+/* --------------------- Click Target for Close Button ------------------- */
+/* ----------------------------------------------------------------------- */
+
+.icon-close {
+    pointer-events: none !important;
+}
+
+.icon-close {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/sample_600x600.png', sizingMethod='scale');
+    background: none !important;
+}
+
+
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------- Button Hovers --------------------------- */
+/* ----------------------------------------------------------------------- */
+
+.button:hover {
+    background: linear-gradient(135deg, #ebcaff, #ffafaf 20%, #fdff9b 67%, #b2d1ff);
+    background-size: 200% 200%;
+
+    -webkit-animation: Button 0.75s ease infinite;
+    -moz-animation: Button 0.75s ease infinite;
+    animation: Button 0.75s ease infinite;
+}
+
+@-webkit-keyframes Button {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@-moz-keyframes Button {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@keyframes Button {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+
+
+
+/* ----------------------------------------------------------------------- */
+/* ---------------------------- Gradient Borders ------------------------- */
+/* ----------------------------------------------------------------------- */
+
+.gradient-border {
+    background: linear-gradient(135deg, #ebcaff, #ffafaf 20%, #fdff9b 67%, #b2d1ff);
+    background-size: 200% 200%;
+
+    -webkit-animation: Border 4s ease 10;
+    -moz-animation: Border 4s ease 10;
+    animation: Border 4s ease 10;
+}
+
+@-webkit-keyframes Border {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@-moz-keyframes Border {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@keyframes Border {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+
+
+
+/* ----------------------------------------------------------------------- */
+/* --------------------------- Responsive iFrames ------------------------ */
+/* ----------------------------------------------------------------------- */
+
+
+.looping-embed,
+.main-video {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.looping-embed iframe,
+.main-video iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
